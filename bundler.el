@@ -154,7 +154,7 @@
 
 (defun bundle-command (cmd)
   "Run cmd in an async buffer."
-  (async-shell-command cmd "*Bundler*"))
+  (compile cmd))
 
 (defun run-bundled-command (cmd &rest args)
   "Run bundle exec for the given command, optionally with args"
